@@ -586,9 +586,7 @@ footer {
         max-width: 100%;
         padding: 0 10px;
     }
-    * {
-        background: #FFF;
-    }
+
     .menu_divider {
          margin-bottom: 0;
     }
@@ -623,6 +621,19 @@ footer {
 
 
 
+    .catalog_header_btns {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+    .catalog_content_wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .catalog_content img {
+        width: 97%;
+    }
+
+
 
     .hamburger{
 		display: flex;
@@ -630,7 +641,6 @@ footer {
         gap: 3px;
 		width: 30px;
 		height: 30px;
-        background: #E1EDE6;
     }
     .hamburger	span {
         display: block;
@@ -657,7 +667,9 @@ footer {
 
 
 
-
+    .promo {
+        height: 270px;
+    }
     .promo_info_title {
         font-size: 30px;
     }
