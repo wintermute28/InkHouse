@@ -316,8 +316,8 @@ footer {
 }
 .footer_container {
     display: flex;
-    justify-content: space-between;
     padding-top: 23px;
+    gap: 115px;
 }
 .footer_left_tel {
     display: block;
@@ -331,9 +331,14 @@ footer {
     color: #86928B;
     font-size: 18px;
 }
+.footer_menu-sosial {
+    display: flex;
+    gap: 240px;
+}
 .footer_menu {
     /* margin-left: 115px; */
     display: flex;
+    justify-content: space-around;
     gap: 60px;
 }
 .footer_menu_title {
@@ -354,6 +359,8 @@ footer {
     align-items: center;
 }
 .footer_social_descr {
+    display: flex;
+    flex-direction: column;
     margin-top: 10px;
     color: #86928B;
     font-size: 12px;
@@ -449,6 +456,13 @@ footer {
     .catalog_item_btn {
         width: 260px;
     }
+
+    .footer_menu-sosial {
+        gap: 120px;
+    }
+    .footer_left_tel {
+        font-size: 18px;
+    }
 }
 
 
@@ -482,6 +496,45 @@ footer {
         padding: 20px 42px;
     }
 
+
+    .team_wrapper {
+        flex-direction: column;
+        gap: 0;
+    }
+    .team_wrapper img {
+        width: 420px;
+    }
+    .team_item {
+        margin-top: 40px;
+    }
+    .team_item_title {
+        font-size: 30px;
+    }
+    .team_item_descr {
+        font-size: 18px;
+    }
+    .team_item_photos img {
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .footer_container {
+        flex-direction: column;
+        padding-top: 29px;
+        gap: 30px;
+    }
+    .footer_left {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer_left_tel {
+        margin-top: 0;
+    }
+    .footer_social {
+        display: inline;
+    }
 
 
 }
@@ -605,6 +658,24 @@ footer {
         font-size: 18px;
     }
 
+    .footer_menu-sosial {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+    .footer_social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 23px;
+    }
+    .footer_social_descr {
+        display: flex;
+        flex-direction: row;
+        margin: 10 auto;
+        gap: 3px;
+    }
+
 }
 
 
@@ -658,6 +729,9 @@ footer {
         flex-wrap: wrap;
         gap: 15px;
         justify-content: center;
+    }
+    .catalog_header_btn {
+        font-size: 18px;
     }
     .catalog_content_wrapper {
         grid-template-columns: repeat(1, 1fr);
@@ -731,5 +805,56 @@ footer {
     .about_btn {
         margin: 30px auto;
         width: 80%;
+    }
+
+    
+
+    .team_wrapper img {
+        width: 100%;
+    }
+    .team_item {
+        margin-top: 30px;
+    }
+    .team_item_title {
+        font-size: 24px;
+    }
+    .team_item_descr {
+        font-size: 16px;
+    }
+    .team_item_photos {
+        gap: 25px;
+    }
+    .team_item_photos img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .footer_left {
+        flex-direction: column;
+        align-items:center;
+        gap: 5px;
+    }
+    .footer_left_tel {
+        font-size: 16px;
+    }
+    .footer_left_tel {
+        font-size: 16px;
+    }
+    .footer_menu_title {
+        font-size: 20px;
+    }
+    .footer_menu {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .footer_menu_list {
+        font-size: 16px;
+    }
+    .footer_social {
+        margin-top: 20px;
+    }
+
+    .menu_divider {
+        width: 290px;
     }
 }
