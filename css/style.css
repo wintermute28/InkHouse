@@ -728,7 +728,7 @@ footer {
     .catalog_header_btns {
         flex-wrap: wrap;
         gap: 15px;
-        justify-content: center;
+        align-items: start;
     }
     .catalog_header_btn {
         font-size: 18px;
@@ -829,6 +829,10 @@ footer {
         height: 80px;
     }
 
+
+    .footer_container {
+        gap: 20px;
+    }
     .footer_left {
         flex-direction: column;
         align-items:center;
@@ -845,7 +849,8 @@ footer {
     }
     .footer_menu {
         flex-wrap: wrap;
-        gap: 0;
+        gap: 10px;
+        justify-content: space-between;
     }
     .footer_menu_list {
         font-size: 16px;
@@ -856,5 +861,9 @@ footer {
 
     .menu_divider {
         width: 290px;
+    }
+
+    .go_top {
+        padding: 5px 5px;
     }
 }
