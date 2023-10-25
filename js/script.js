@@ -66,4 +66,33 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     })
 
+
+    //Hamburger
+    const menu = document.querySelector('.menu_inner'),
+    menuItem = document.querySelectorAll('.menu_item'),
+    hamburger = document.querySelector('.hamburger'),
+    body = document.body,
+    cart = document.querySelector('.menu_cart');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('hamburger_active');
+        menu.classList.toggle('menu_inner_active');
+        body.classList.toggle("noscroll");
+        cart.classList.toggle("hide");
+
+    });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            hamburger.classList.toggle('hamburger_active');
+            menu.classList.toggle('menu_inner_active');
+            body.classList.toggle("noscroll");
+            cart.classList.remove("hide");
+        })
+    })
+
+
+
+
+
 });
